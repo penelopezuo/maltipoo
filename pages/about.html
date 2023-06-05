@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <title>Document</title>
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-color: #f9f9f9;
+        }
+        
+        h2 {
+          color: #e64c65;
+          font-size: 32px;
+          margin-top: 30px;
+          
+        }
+        
+        p {
+          color: #333333;
+          font-size: 18px;
+          margin: 20px auto;
+          max-width: 600px;
+          line-height: 1.5;
+        }
+        
+        .image-container {
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+        }
+        
+        .image-container img {
+          max-width: 400px;
+          border-radius: 50%;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+      </style>
+  </head>
+  <body>
+    <div class="dropdown" style = "display : inline-block;">
+      <div class="home_panel" style = "text-align:  left;"">
+        <button class="dropbtn" >Menu</button>
+        <h1>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+          My Maltipoo Story
+        </h1>
+        <div class="dropdown-content">
+          <a href="/pages/index.html">Home</a>
+          <a href="/pages/table.html">Showcase</a>
+          <a href="/pages/about.html">About</a>
+        </div>
+      </div>
+    </div>
+
+    <div class = "maltipoo_intro">
+        <p>Upon stumbling across a listing for two adorable maltipoos, an irresistible wave of excitement washed over me, prompting an instant decision to embark on an impromptu journey to Los Angeles. Fueled by sheer determination and a desire to bring those delightful furry companions into my life, I swiftly made arrangements to catch a flight. The prospect of welcoming not just one, but two charming maltipoos into my home filled me with a sense of anticipation and joy, propelling me to traverse the miles and seize this incredible opportunity in the City of Angels.</p>
+  
+  
+    </div>
+    <div class = "my_story"></div>
+    <div class = "story_share">
+        <h2>Share Your Maltipoo Story With Us</h1>
+        <form action="submit_story.php" method="POST">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          
+          <label for="story">Your Story:</label><br>
+          <textarea id="story" name="story" rows="6" cols="50" required></textarea><br><br>
+          
+          <input type="submit" value="Submit Story">
+        </form>
+    </div>
+    <script src="comment.js"></script>
+  </body>
+</html>
